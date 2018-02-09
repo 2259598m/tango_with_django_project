@@ -32,12 +32,12 @@
 					<div>
 						<h3>Most Viewed Pages</h3>
 					</div>
-	         	   {% if pages %}
+	        {% if pages %}
 	             	<ul>
 	                 {% for page in pages %}
 	                 <li><a href="{{ page.url }}">{{ page.title }}</a></li>
 	                 {% endfor %}
-	             </ul>
+	                </ul>
 	        {% else %}
 	             <strong>There are no categories present.</strong>
 	        {% endif %}
